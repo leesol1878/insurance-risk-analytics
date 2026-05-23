@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (tracked with DVC, not Git)
+*.csv
+*.xlsx
+*.parquet
+data/
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Logs
+*.log
