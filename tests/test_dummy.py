@@ -1,16 +1,17 @@
 """
-Dummy test file to pass CI/CD pipeline
+Simple tests for CI pipeline
 """
 
-def test_dummy():
-    """Simple test that always passes"""
-    assert True == True
+def test_pandas_import():
+    """Test pandas can be imported"""
+    import pandas as pd
+    assert pd.__version__ is not None
 
-def test_imports():
-    """Test that basic imports work"""
-    try:
-        import pandas as pd
-        import numpy as np
-        assert True
-    except ImportError:
-        assert False
+def test_numpy_import():
+    """Test numpy can be imported"""
+    import numpy as np
+    assert np.__version__ is not None
+
+def test_dummy():
+    """Basic test"""
+    assert 1 + 1 == 2
