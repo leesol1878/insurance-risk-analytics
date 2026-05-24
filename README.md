@@ -30,3 +30,13 @@ insurance-risk-analytics/
 ```bash
 git clone https://github.com/stsiokas/insurance-risk-analytics.git
 cd insurance-risk-analytics
+
+## Data Pipeline (DVC)
+
+### Setup
+```bash
+# Install DVC
+pip install dvc
+
+# Pull data from remote
+dvc pull
