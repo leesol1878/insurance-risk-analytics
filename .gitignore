@@ -1,4 +1,4 @@
-# Python
+echo "# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -24,15 +24,20 @@ build/
 .DS_Store
 Thumbs.db
 
-# Data files (tracked with DVC, not Git)
-*.csv
-*.xlsx
-*.parquet
-data/
-
-# DVC
+# DVC (cache and temp files only - NOT the .dvc files)
 .dvc/cache/
 .dvc/tmp/
 
 # Logs
 *.log
+
+# The actual data files (tracked by DVC)
+data/*.csv
+data/*.txt
+
+# But NOT the .dvc files (we want to track these in Git)
+# .dvc files are tracked normally
+
+# Virtual environment
+venv/
+" > .gitignore
