@@ -1,0 +1,5 @@
+Hypothesis,KPI,Test,P-value,Decision,Business Recommendation
+H₁: Risk differences across provinces,Claim Frequency,Chi-square,0.000000,REJECT H₀,Adjust premiums based on province risk profile
+H₂: Risk differences between zip codes,Claim Severity,T-test,0.360368,FAIL TO REJECT,No adjustment needed
+H₃: Margin differences between zip codes,Margin,T-test,0.520588,FAIL TO REJECT,Current allocation is optimal
+H₄: Risk differences between genders,Claim Frequency,Z-test,0.604269,FAIL TO REJECT,Gender should NOT be a pricing factor
